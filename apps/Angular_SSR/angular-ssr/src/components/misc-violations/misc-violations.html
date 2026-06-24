@@ -1,0 +1,52 @@
+<div class="violation-section">
+  <h2>8. Прочие нарушения</h2>
+
+  <!-- 
+    НАРУШЕНИЕ: WCAG 1.4.3 - Contrast
+    -->
+  <p class="low-contrast">Этот текст имеет низкий контраст (светло-серый на белом)</p>
+
+  <!-- очень маленький кликабельный элемент -->
+  <button class="tiny-button">OK</button>
+
+  <!-- 
+    НАРУШЕНИЕ: WCAG 4.1.2 - Name, Role, Value 
+    iframe без title 
+    -->
+  <iframe src="https://example.com" width="300" height="100"></iframe>
+
+  <!-- автофокус -->
+  <input type="text" autofocus placeholder="Автофокус на мне" />
+
+  <!-- 
+    НАРУШЕНИЕ: WCAG 2.2.2 - Pause, Stop, Hide 
+    -->
+  <p class="blink">Мерцающий текст (отвлекает и потенциально опасен)</p>
+
+  <!-- 
+    НАРУШЕНИЕ: WCAG 2.4.3 - Focus Order 
+    -->
+  <div tabindex="5">Первый фокус (tabindex=5)</div>
+  <div tabindex="1">Второй фокус (tabindex=1)</div>
+
+  <!-- 
+    НАРУШЕНИЕ: WCAG 4.1.3 - Status Messages 
+    -->
+  <div id="dynamic-content"></div>
+  <button
+    onclick="
+      document.getElementById('dynamic-content').innerHTML = 'Новое содержимое без aria-live'
+    "
+  >
+    Обновить контент
+  </button>
+
+  <!-- Контент с ограничением по времени (Нарушение WCAG 2.2.1) -->
+  <div id="timed-content">
+    @if (showContent) {
+      <p>Это сообщение исчезнет через 20 секунд, и нет способа продлить время.</p>
+    } @else {
+      <p>Время истекло. Сообщение удалено.</p>
+    }
+  </div>
+</div>

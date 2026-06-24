@@ -1,0 +1,35 @@
+/* Низкая контрастность текста - Нарушение WCAG 1.4.3 */
+.low-contrast {
+    color: #cccccc;
+    background-color: #ffffff;
+}
+/* Мерцание - Нарушение WCAG 2.2.2 */
+.blink {
+    animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+/* Крошечная кнопка (дополнительное нарушение целевой области) */
+.tiny-button {
+    font-size: 8px;
+    padding: 1px 2px;
+}
+/* Стили для skip link */
+.skip-link-hidden {
+    display: none;
+}
+.skip-link-visible:focus {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: white;
+    z-index: 1000;
+    padding: 5px;
+}
+.custom-checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}

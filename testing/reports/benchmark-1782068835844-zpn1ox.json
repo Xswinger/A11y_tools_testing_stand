@@ -1,0 +1,74 @@
+[
+  {
+    "tool": "axe-core",
+    "browser": "chromium",
+    "app": "static-html",
+    "durationMs": 1361,
+    "timestamp": "2026-06-21T19:07:18.409Z",
+    "runId": "1782068835844-zpn1ox"
+  },
+  {
+    "tool": "lighthouse",
+    "browser": "chromium",
+    "app": "static-html",
+    "durationMs": 6622,
+    "timestamp": "2026-06-21T19:07:25.039Z",
+    "runId": "1782068835844-zpn1ox"
+  },
+  {
+    "tool": "pa11y",
+    "browser": "chromium",
+    "app": "static-html",
+    "durationMs": 1939,
+    "timestamp": "2026-06-21T19:07:26.988Z",
+    "runId": "1782068835844-zpn1ox"
+  },
+  {
+    "tool": "lighthouse",
+    "browser": "chromium",
+    "app": "native-angular",
+    "durationMs": 6687,
+    "timestamp": "2026-06-21T19:07:35.719Z",
+    "runId": "1782068835844-zpn1ox"
+  },
+  {
+    "tool": "axe-core",
+    "browser": "chromium",
+    "app": "native-angular",
+    "durationMs": 1347,
+    "timestamp": "2026-06-21T19:07:37.102Z",
+    "runId": "1782068835844-zpn1ox"
+  },
+  {
+    "tool": "pa11y",
+    "browser": "chromium",
+    "app": "native-angular",
+    "durationMs": 1765,
+    "timestamp": "2026-06-21T19:07:38.873Z",
+    "runId": "1782068835844-zpn1ox"
+  },
+  {
+    "tool": "lighthouse",
+    "browser": "chromium",
+    "app": "ssr-angular",
+    "durationMs": 26127,
+    "timestamp": "2026-06-21T19:08:27.742Z",
+    "runId": "1782068835844-zpn1ox"
+  },
+  {
+    "tool": "pa11y",
+    "browser": "chromium",
+    "app": "ssr-angular",
+    "durationMs": 22366,
+    "timestamp": "2026-06-21T19:08:50.115Z",
+    "runId": "1782068835844-zpn1ox"
+  },
+  {
+    "tool": "axe-core",
+    "browser": "chromium",
+    "app": "ssr-angular",
+    "durationMs": 21009,
+    "timestamp": "2026-06-21T19:09:11.167Z",
+    "runId": "1782068835844-zpn1ox"
+  }
+]

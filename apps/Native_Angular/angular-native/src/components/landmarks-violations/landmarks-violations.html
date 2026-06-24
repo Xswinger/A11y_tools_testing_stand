@@ -1,0 +1,32 @@
+<div class="violation-section">
+  <h2>6. Landmarks</h2>
+
+  <!-- НАРУШЕНИЕ: landmark-banner-is-top-level -->
+  <div role="main">
+    <div role="banner">Вложенный баннер (нарушение banner-is-top-level)</div>
+  </div>
+
+  <!-- НАРУШЕНИЕ: landmark-contentinfo-is-top-level -->
+  <div role="main">
+    <div role="contentinfo">Вложенный contentinfo (нарушение contentinfo-is-top-level)</div>
+  </div>
+
+  <!-- НАРУШЕНИЕ: landmark-no-duplicate-banner -->
+  <div role="banner">Первый баннер (дубликат)</div>
+  <div role="banner">Второй баннер (дубликат)</div>
+
+  <!-- НАРУШЕНИЕ: landmark-no-duplicate-contentinfo -->
+  <div role="contentinfo">Первый contentinfo (дубликат)</div>
+  <div role="contentinfo">Второй contentinfo (дубликат)</div>
+
+  <!-- НАРУШЕНИЕ: landmark-no-duplicate-main -->
+  <div role="main">Первый main (дубликат)</div>
+  <div role="main">Второй main (дубликат)</div>
+
+  <!-- 
+    НАРУШЕНИЕ: landmark-main-is-top-level 
+    -->
+  <div role="main">
+    <div role="main">Вложенный main (нарушение main-is-top-level)</div>
+  </div>
+</div>

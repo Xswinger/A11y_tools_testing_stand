@@ -1,0 +1,62 @@
+<div class="violation-section">
+  <h2>7. Таблицы</h2>
+
+  <!-- empty-table-header -->
+  <table border="1">
+    <tbody>
+      <tr>
+        <th></th>
+        <th>Заголовок 2</th>
+      </tr>
+      <tr>
+        <td>Данные 1</td>
+        <td>Данные 2</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- scope-attr-valid -->
+  <table border="1">
+    <tbody>
+      <tr>
+        <th scope="invalid">Заголовок с неверным scope</th>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- 
+    НАРУШЕНИЕ: table-duplicate-name 
+    -->
+  <table border="1" summary="Таблица данных">
+    <caption>
+      Таблица данных
+    </caption>
+    <tbody>
+      <tr>
+        <th>Данные</th>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- отсутствие th -->
+  <table border="1">
+    <tbody>
+      <tr>
+        <td>Ячейка без заголовка</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Устаревший атрибут summary -->
+  <table border="1" summary="Старый атрибут">
+    <caption>
+      Таблица с устаревшим summary
+    </caption>
+    <tbody>
+      <tr>
+        <th>Заголовок</th>
+        <td>Данные</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

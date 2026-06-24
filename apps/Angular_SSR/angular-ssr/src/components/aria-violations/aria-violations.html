@@ -1,0 +1,41 @@
+<div class="violation-section">
+  <h2>1. ARIA нарушения</h2>
+
+  <!-- aria-allowed-role -->
+  <div role="row">Это div с ролью row вне таблицы</div>
+
+  <!-- 
+    НАРУШЕНИЕ: aria-dialog-name 
+    Элемент с ролью dialog не имеет доступного имени (нет aria-label или aria-labelledby)
+    -->
+  <div role="dialog" style="border: 1px solid black; padding: 5px">
+    Модальное окно без aria-label
+  </div>
+
+  <!-- aria-text -->
+  <span role="text"></span>
+
+  <!-- aria-treeitem-name -->
+  <div role="treeitem">Элемент дерева без имени</div>
+
+  <!-- presentation-role-conflict -->
+  <div role="presentation" tabindex="0">Это presentation, но с tabindex</div>
+
+  <!-- элемент с ролью checkbox, но нет aria-checked (WCAG 4.1.2) -->
+  <div class="custom-checkbox" role="checkbox" tabindex="0" aria-labelledby="chk-label"></div>
+  <span id="chk-label">Согласен с условиями</span>
+
+  <!-- элемент с aria-hidden="true", но получает фокус -->
+  <div aria-hidden="true">
+    <a href="#">Скрытая ссылка, но фокус возможен</a>
+  </div>
+
+  <!-- элемент с ролью button, но без tabindex и обработчика (WCAG 4.1.2) -->
+  <span role="button">Нажми меня</span>
+
+  <!-- отсутствие обязательных атрибутов: aria-label пустой (WCAG 4.1.2) -->
+  <div role="alert" aria-label="">Важное сообщение (пустой aria-label)</div>
+
+  <!-- aria-labelledby на несуществующий id (WCAG 4.1.2) -->
+  <div role="region" aria-labelledby="nonexistent-label">Область без названия</div>
+</div>

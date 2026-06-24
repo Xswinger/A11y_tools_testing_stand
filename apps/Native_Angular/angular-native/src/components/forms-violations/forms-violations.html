@@ -1,0 +1,39 @@
+<div class="violation-section">
+  <h2>4. Формы и label</h2>
+
+  <!-- поле ввода без label -->
+  <input type="text" placeholder="Имя" />
+
+  <!-- label не связан с input -->
+  <label for="">Фамилия</label>
+  <input type="text" placeholder="Фамилия" id="surname" />
+
+  <!-- label-title-only: поле с title, но без явного label -->
+  <input type="text" title="Имя пользователя" placeholder="Имя" id="userName" />
+
+  <!-- группа радиокнопок без fieldset/legend (WCAG 1.3.1) -->
+  <h3>Выберите пол:</h3>
+  <input type="radio" name="gender" id="male" value="male" />
+  <label for="male">Мужской</label>
+  <input type="radio" name="gender" id="female" value="female" />
+  <label for="female">Женский</label>
+
+  <!-- кнопка без доступного имени -->
+  <button><span class="icon">🔍</span></button>
+
+  <!-- select без label -->
+  <select>
+    <option>Опция 1</option>
+    <option>Опция 2</option>
+  </select>
+
+  <!-- поле с ошибкой без текстового описания -->
+  <label for="error-input">Введите число:</label>
+  <input type="text" id="error-input" style="border: 2px solid red" aria-invalid="true" />
+
+  <!-- Дублирующиеся ID (WCAG 4.1.1) -->
+  <label for="duplicate-field">Поле 1</label>
+  <input type="text" id="duplicate-field" placeholder="Первый" />
+  <label for="duplicate-field">Поле 2 (дубликат id)</label>
+  <input type="text" id="duplicate-field" placeholder="Второй" />
+</div>

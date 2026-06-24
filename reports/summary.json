@@ -1,0 +1,1539 @@
+{
+  "config": {
+    "configFile": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/playwright.config.ts",
+    "rootDir": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./reports/summary.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.60.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "benchmark.spec.ts",
+      "file": "benchmark.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "ssr-angular",
+          "file": "benchmark.spec.ts",
+          "line": 197,
+          "column": 10,
+          "specs": [
+            {
+              "title": "lighthouse",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 26237,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [
+                        {
+                          "buffer": ""
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:32:05.316Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-a0d776b55e8b15a07162",
+              "file": "benchmark.spec.ts",
+              "line": 268,
+              "column": 21
+            },
+            {
+              "title": "pa11y",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 22518,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Запускаем сервер для ssr-angular...\n"
+                        },
+                        {
+                          "text": "[ssr-angular] \n> angular-ssr@0.0.0 start\n> ng serve\n\n\n"
+                        },
+                        {
+                          "text": "[ssr-angular] \u001b[33m❯\u001b[39m Building...\n\n"
+                        },
+                        {
+                          "text": "[ssr-angular] \u001b[32m✔\u001b[39m Building...\n\n"
+                        },
+                        {
+                          "text": "[ssr-angular] \u001b[35mBrowser bundles\u001b[39m     \n\u001b[1mInitial chunk files\u001b[22m \u001b[2m | \u001b[22m\u001b[1mNames\u001b[22m           \u001b[2m | \u001b[22m \u001b[1mRaw size\u001b[22m\n\u001b[32mmain.js\u001b[39m             \u001b[2m | \u001b[22m\u001b[2mmain\u001b[22m            \u001b[2m | \u001b[22m \u001b[36m74.33 kB\u001b[39m\u001b[2m | \u001b[22m\n\u001b[32mpolyfills.js\u001b[39m        \u001b[2m | \u001b[22m\u001b[2mpolyfills\u001b[22m       \u001b[2m | \u001b[22m \u001b[36m95 bytes\u001b[39m\u001b[2m | \u001b[22m\n\u001b[32mstyles.css\u001b[39m          \u001b[2m | \u001b[22m\u001b[2mstyles\u001b[22m          \u001b[2m | \u001b[22m \u001b[36m95 bytes\u001b[39m\u001b[2m | \u001b[22m\n\n\u001b[1m \u001b[22m                   \u001b[2m | \u001b[22m\u001b[1mInitial total\u001b[22m   \u001b[2m | \u001b[22m \u001b[1m74.52 kB\u001b[22m\n\n\n\u001b[35mServer bundles\u001b[39m      \n\u001b[1mInitial chunk files\u001b[22m \u001b[2m | \u001b[22m\u001b[1mNames\u001b[22m           \u001b[2m | \u001b[22m \u001b[1mRaw size\u001b[22m\n\u001b[32mmain.server.mjs\u001b[39m     \u001b[2m | \u001b[22m\u001b[2mmain.server\u001b[22m     \u001b[2m | \u001b[22m \u001b[36m75.59 kB\u001b[39m\u001b[2m | \u001b[22m\n\u001b[32mserver.mjs\u001b[39m          \u001b[2m | \u001b[22m\u001b[2mserver\u001b[22m          \u001b[2m | \u001b[22m  \u001b[36m1.86 kB\u001b[39m\u001b[2m | \u001b[22m\n\u001b[32mpolyfills.server.mjs\u001b[39m\u001b[2m | \u001b[22m\u001b[2mpolyfills.server\u001b[22m\u001b[2m | \u001b[22m\u001b[36m266 bytes\u001b[39m\u001b[2m | \u001b[22m\n\nApplication bundle generation complete. [0.761 seconds] - 2026-06-22T07:31:21.431Z\n\n\n"
+                        },
+                        {
+                          "text": "[ssr-angular] Watch mode enabled. Watching for file changes...\n\n"
+                        },
+                        {
+                          "text": "[ssr-angular] NOTE: Raw file sizes do not reflect development server per-request transformations.\n\n"
+                        },
+                        {
+                          "text": "[ssr-angular]   \u001b[32m➜\u001b[39m  \u001b[1mLocal\u001b[22m:   \u001b[36mhttp://localhost:\u001b[1m4200\u001b[22m/\u001b[39m\n\n"
+                        },
+                        {
+                          "text": "[ssr-angular] сервер готов\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "[ssr-angular] \u001b[1m\u001b[33m\u001b[33m▲ \u001b[43;33m[\u001b[43;30mWARNING\u001b[43;33m]\u001b[0m \u001b[1mNG8113: RouterOutlet is not used within the template of App\u001b[0m \u001b[1m\u001b[35m[plugin angular-compiler]\u001b[0m\n\n    src/app/app.ts:15:4:\n\u001b[37m      15 │     \u001b[32mRouterOutlet\u001b[37m,\n         ╵     \u001b[32m~~~~~~~~~~~~\u001b[0m\n\n\u001b[39m\u001b[22m\n\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:31:20.062Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-500fff6a295fb448809c",
+              "file": "benchmark.spec.ts",
+              "line": 237,
+              "column": 21
+            },
+            {
+              "title": "axe-core",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 21198,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n Бенчмарк результатов:\n"
+                        },
+                        {
+                          "text": "┌─────────┬──────────────┬────────────┬──────────────────┬────────────┐\n│ (index) │ Инструмент   │ Браузер    │ Приложение       │ Время (мс) │\n├─────────┼──────────────┼────────────┼──────────────────┼────────────┤\n│ 0       │ \u001b[32m'lighthouse'\u001b[39m │ \u001b[32m'chromium'\u001b[39m │ \u001b[32m'static-html'\u001b[39m    │ \u001b[33m8851\u001b[39m       │\n│ 1       │ \u001b[32m'pa11y'\u001b[39m      │ \u001b[32m'chromium'\u001b[39m │ \u001b[32m'static-html'\u001b[39m    │ \u001b[33m2480\u001b[39m       │\n│ 2       │ \u001b[32m'axe-core'\u001b[39m   │ \u001b[32m'chromium'\u001b[39m │ \u001b[32m'static-html'\u001b[39m    │ \u001b[33m3689\u001b[39m       │\n│ 3       │ \u001b[32m'pa11y'\u001b[39m      │ \u001b[32m'chromium'\u001b[39m │ \u001b[32m'native-angular'\u001b[39m │ \u001b[33m2389\u001b[39m       │\n│ 4       │ \u001b[32m'lighthouse'\u001b[39m │ \u001b[32m'chromium'\u001b[39m │ \u001b[32m'native-angular'\u001b[39m │ \u001b[33m8827\u001b[39m       │\n│ 5       │ \u001b[32m'axe-core'\u001b[39m   │ \u001b[32m'chromium'\u001b[39m │ \u001b[32m'native-angular'\u001b[39m │ \u001b[33m3641\u001b[39m       │\n│ 6       │ \u001b[32m'pa11y'\u001b[39m      │ \u001b[32m'chromium'\u001b[39m │ \u001b[32m'ssr-angular'\u001b[39m    │ \u001b[33m22518\u001b[39m      │\n│ 7       │ \u001b[32m'lighthouse'\u001b[39m │ \u001b[32m'chromium'\u001b[39m │ \u001b[32m'ssr-angular'\u001b[39m    │ \u001b[33m26237\u001b[39m      │\n│ 8       │ \u001b[32m'axe-core'\u001b[39m   │ \u001b[32m'chromium'\u001b[39m │ \u001b[32m'ssr-angular'\u001b[39m    │ \u001b[33m21155\u001b[39m      │\n└─────────┴──────────────┴────────────┴──────────────────┴────────────┘\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:32:31.557Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-38c8d0056434f31a26d0",
+              "file": "benchmark.spec.ts",
+              "line": 214,
+              "column": 21
+            },
+            {
+              "title": "lighthouse",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Lighthouse работает только в Chrome, пропускаем для других браузеров",
+                      "location": {
+                        "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                        "line": 269,
+                        "column": 26
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:33:23.178Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Lighthouse работает только в Chrome, пропускаем для других браузеров",
+                          "location": {
+                            "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                            "line": 269,
+                            "column": 26
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-5986e35b18a5d4fbb1a2",
+              "file": "benchmark.spec.ts",
+              "line": 268,
+              "column": 21
+            },
+            {
+              "title": "pa11y",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Pa11y работает только в Chrome, пропускаем для других браузеров",
+                      "location": {
+                        "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                        "line": 238,
+                        "column": 26
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Запускаем сервер для ssr-angular...\n"
+                        },
+                        {
+                          "text": "[ssr-angular] \n> angular-ssr@0.0.0 start\n> ng serve\n\n\n"
+                        },
+                        {
+                          "text": "[ssr-angular] \u001b[33m❯\u001b[39m Building...\n\n"
+                        },
+                        {
+                          "text": "[ssr-angular] \u001b[32m✔\u001b[39m Building...\n\n"
+                        },
+                        {
+                          "text": "[ssr-angular] \u001b[35mBrowser bundles\u001b[39m     \n\u001b[1mInitial chunk files\u001b[22m \u001b[2m | \u001b[22m\u001b[1mNames\u001b[22m           \u001b[2m | \u001b[22m \u001b[1mRaw size\u001b[22m\n\u001b[32mmain.js\u001b[39m             \u001b[2m | \u001b[22m\u001b[2mmain\u001b[22m            \u001b[2m | \u001b[22m \u001b[36m74.33 kB\u001b[39m\u001b[2m | \u001b[22m\n\u001b[32mpolyfills.js\u001b[39m        \u001b[2m | \u001b[22m\u001b[2mpolyfills\u001b[22m       \u001b[2m | \u001b[22m \u001b[36m95 bytes\u001b[39m\u001b[2m | \u001b[22m\n\u001b[32mstyles.css\u001b[39m          \u001b[2m | \u001b[22m\u001b[2mstyles\u001b[22m          \u001b[2m | \u001b[22m \u001b[36m95 bytes\u001b[39m\u001b[2m | \u001b[22m\n\n\u001b[1m \u001b[22m                   \u001b[2m | \u001b[22m\u001b[1mInitial total\u001b[22m   \u001b[2m | \u001b[22m \u001b[1m74.52 kB\u001b[22m\n\n\n\u001b[35mServer bundles\u001b[39m      \n\u001b[1mInitial chunk files\u001b[22m \u001b[2m | \u001b[22m\u001b[1mNames\u001b[22m           \u001b[2m | \u001b[22m \u001b[1mRaw size\u001b[22m\n\u001b[32mmain.server.mjs\u001b[39m     \u001b[2m | \u001b[22m\u001b[2mmain.server\u001b[22m     \u001b[2m | \u001b[22m \u001b[36m75.59 kB\u001b[39m\u001b[2m | \u001b[22m\n\u001b[32mserver.mjs\u001b[39m          \u001b[2m | \u001b[22m\u001b[2mserver\u001b[22m          \u001b[2m | \u001b[22m  \u001b[36m1.86 kB\u001b[39m\u001b[2m | \u001b[22m\n\u001b[32mpolyfills.server.mjs\u001b[39m\u001b[2m | \u001b[22m\u001b[2mpolyfills.server\u001b[22m\u001b[2m | \u001b[22m\u001b[36m266 bytes\u001b[39m\u001b[2m | \u001b[22m\n\nApplication bundle generation complete. [0.815 seconds] - 2026-06-22T07:33:01.762Z\n\n\n"
+                        },
+                        {
+                          "text": "[ssr-angular] Watch mode enabled. Watching for file changes...\n\n"
+                        },
+                        {
+                          "text": "[ssr-angular] NOTE: Raw file sizes do not reflect development server per-request transformations.\n\n"
+                        },
+                        {
+                          "text": "[ssr-angular]   \u001b[32m➜\u001b[39m  \u001b[1mLocal\u001b[22m:   \u001b[36mhttp://localhost:\u001b[1m4200\u001b[22m/\u001b[39m\n\n"
+                        },
+                        {
+                          "text": "[ssr-angular] сервер готов\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "[ssr-angular] \u001b[1m\u001b[33m\u001b[33m▲ \u001b[43;33m[\u001b[43;30mWARNING\u001b[43;33m]\u001b[0m \u001b[1mNG8113: RouterOutlet is not used within the template of App\u001b[0m \u001b[1m\u001b[35m[plugin angular-compiler]\u001b[0m\n\n    src/app/app.ts:15:4:\n\u001b[37m      15 │     \u001b[32mRouterOutlet\u001b[37m,\n         ╵     \u001b[32m~~~~~~~~~~~~\u001b[0m\n\n\u001b[39m\u001b[22m\n\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:33:00.435Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Pa11y работает только в Chrome, пропускаем для других браузеров",
+                          "location": {
+                            "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                            "line": 238,
+                            "column": 26
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-6b5e554e993ef587f7d4",
+              "file": "benchmark.spec.ts",
+              "line": 237,
+              "column": 21
+            },
+            {
+              "title": "axe-core",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 21388,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:33:23.183Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-745628cff3c848f6c4b8",
+              "file": "benchmark.spec.ts",
+              "line": 214,
+              "column": 21
+            },
+            {
+              "title": "lighthouse",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Lighthouse работает только в Chrome, пропускаем для других браузеров",
+                      "location": {
+                        "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                        "line": 269,
+                        "column": 26
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n Бенчмарк результатов:\n"
+                        },
+                        {
+                          "text": "┌─────────┬────────────┬──────────┬──────────────────┬────────────┐\n│ (index) │ Инструмент │ Браузер  │ Приложение       │ Время (мс) │\n├─────────┼────────────┼──────────┼──────────────────┼────────────┤\n│ 0       │ \u001b[32m'axe-core'\u001b[39m │ \u001b[32m'webkit'\u001b[39m │ \u001b[32m'static-html'\u001b[39m    │ \u001b[33m3682\u001b[39m       │\n│ 1       │ \u001b[32m'axe-core'\u001b[39m │ \u001b[32m'webkit'\u001b[39m │ \u001b[32m'native-angular'\u001b[39m │ \u001b[33m6978\u001b[39m       │\n│ 2       │ \u001b[32m'axe-core'\u001b[39m │ \u001b[32m'webkit'\u001b[39m │ \u001b[32m'ssr-angular'\u001b[39m    │ \u001b[33m21346\u001b[39m      │\n└─────────┴────────────┴──────────┴──────────────────┴────────────┘\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:34:49.197Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Lighthouse работает только в Chrome, пропускаем для других браузеров",
+                          "location": {
+                            "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                            "line": 269,
+                            "column": 26
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-5dab8970e97592453f91",
+              "file": "benchmark.spec.ts",
+              "line": 268,
+              "column": 21
+            },
+            {
+              "title": "pa11y",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Pa11y работает только в Chrome, пропускаем для других браузеров",
+                      "location": {
+                        "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                        "line": 238,
+                        "column": 26
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:34:49.193Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Pa11y работает только в Chrome, пропускаем для других браузеров",
+                          "location": {
+                            "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                            "line": 238,
+                            "column": 26
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-d9697352661a98691b85",
+              "file": "benchmark.spec.ts",
+              "line": 237,
+              "column": 21
+            },
+            {
+              "title": "axe-core",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 21548,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Запускаем сервер для ssr-angular...\n"
+                        },
+                        {
+                          "text": "[ssr-angular] \n> angular-ssr@0.0.0 start\n> ng serve\n\n\n"
+                        },
+                        {
+                          "text": "[ssr-angular] \u001b[33m❯\u001b[39m Building...\n\n"
+                        },
+                        {
+                          "text": "[ssr-angular] \u001b[32m✔\u001b[39m Building...\n\n"
+                        },
+                        {
+                          "text": "[ssr-angular] \u001b[35mBrowser bundles\u001b[39m     \n\u001b[1mInitial chunk files\u001b[22m \u001b[2m | \u001b[22m\u001b[1mNames\u001b[22m           \u001b[2m | \u001b[22m \u001b[1mRaw size\u001b[22m\n\u001b[32mmain.js\u001b[39m             \u001b[2m | \u001b[22m\u001b[2mmain\u001b[22m            \u001b[2m | \u001b[22m \u001b[36m74.33 kB\u001b[39m\u001b[2m | \u001b[22m\n\u001b[32mpolyfills.js\u001b[39m        \u001b[2m | \u001b[22m\u001b[2mpolyfills\u001b[22m       \u001b[2m | \u001b[22m \u001b[36m95 bytes\u001b[39m\u001b[2m | \u001b[22m\n\u001b[32mstyles.css\u001b[39m          \u001b[2m | \u001b[22m\u001b[2mstyles\u001b[22m          \u001b[2m | \u001b[22m \u001b[36m95 bytes\u001b[39m\u001b[2m | \u001b[22m\n\n\u001b[1m \u001b[22m                   \u001b[2m | \u001b[22m\u001b[1mInitial total\u001b[22m   \u001b[2m | \u001b[22m \u001b[1m74.52 kB\u001b[22m\n\n\n\u001b[35mServer bundles\u001b[39m      \n\u001b[1mInitial chunk files\u001b[22m \u001b[2m | \u001b[22m\u001b[1mNames\u001b[22m           \u001b[2m | \u001b[22m \u001b[1mRaw size\u001b[22m\n\u001b[32mmain.server.mjs\u001b[39m     \u001b[2m | \u001b[22m\u001b[2mmain.server\u001b[22m     \u001b[2m | \u001b[22m \u001b[36m75.59 kB\u001b[39m\u001b[2m | \u001b[22m\n\u001b[32mserver.mjs\u001b[39m          \u001b[2m | \u001b[22m\u001b[2mserver\u001b[22m          \u001b[2m | \u001b[22m  \u001b[36m1.86 kB\u001b[39m\u001b[2m | \u001b[22m\n\u001b[32mpolyfills.server.mjs\u001b[39m\u001b[2m | \u001b[22m\u001b[2mpolyfills.server\u001b[22m\u001b[2m | \u001b[22m\u001b[36m266 bytes\u001b[39m\u001b[2m | \u001b[22m\n\nApplication bundle generation complete. [0.641 seconds] - 2026-06-22T07:34:05.884Z\n\n\n"
+                        },
+                        {
+                          "text": "[ssr-angular] Watch mode enabled. Watching for file changes...\n\n"
+                        },
+                        {
+                          "text": "[ssr-angular] NOTE: Raw file sizes do not reflect development server per-request transformations.\n\n"
+                        },
+                        {
+                          "text": "[ssr-angular]   \u001b[32m➜\u001b[39m  \u001b[1mLocal\u001b[22m:   \u001b[36mhttp://localhost:\u001b[1m4200\u001b[22m/\u001b[39m\n\n"
+                        },
+                        {
+                          "text": "[ssr-angular] сервер готов\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "[ssr-angular] \u001b[1m\u001b[33m\u001b[33m▲ \u001b[43;33m[\u001b[43;30mWARNING\u001b[43;33m]\u001b[0m \u001b[1mNG8113: RouterOutlet is not used within the template of App\u001b[0m \u001b[1m\u001b[35m[plugin angular-compiler]\u001b[0m\n\n    src/app/app.ts:15:4:\n\u001b[37m      15 │     \u001b[32mRouterOutlet\u001b[37m,\n         ╵     \u001b[32m~~~~~~~~~~~~\u001b[0m\n\n\u001b[39m\u001b[22m\n\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:34:04.904Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-d5553e25c03a38a19ab9",
+              "file": "benchmark.spec.ts",
+              "line": 214,
+              "column": 21
+            }
+          ]
+        },
+        {
+          "title": "static-html",
+          "file": "benchmark.spec.ts",
+          "line": 197,
+          "column": 10,
+          "specs": [
+            {
+              "title": "lighthouse",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8852,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Запускаем сервер для static-html...\n"
+                        },
+                        {
+                          "text": "[static-html] сервер готов\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "(node:32792) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)\n"
+                        },
+                        {
+                          "buffer": ""
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:30:46.737Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-3166023a25d167108839",
+              "file": "benchmark.spec.ts",
+              "line": 268,
+              "column": 21
+            },
+            {
+              "title": "pa11y",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2480,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:30:56.642Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-30a6072d48fe54918207",
+              "file": "benchmark.spec.ts",
+              "line": 237,
+              "column": 21
+            },
+            {
+              "title": "axe-core",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3801,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:30:59.128Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-125300355ba95c018f81",
+              "file": "benchmark.spec.ts",
+              "line": 214,
+              "column": 21
+            },
+            {
+              "title": "lighthouse",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Lighthouse работает только в Chrome, пропускаем для других браузеров",
+                      "location": {
+                        "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                        "line": 269,
+                        "column": 26
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Запускаем сервер для static-html...\n"
+                        },
+                        {
+                          "text": "[static-html] сервер готов\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:33:44.581Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Lighthouse работает только в Chrome, пропускаем для других браузеров",
+                          "location": {
+                            "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                            "line": 269,
+                            "column": 26
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-4e159f01962d4b46bb7b",
+              "file": "benchmark.spec.ts",
+              "line": 268,
+              "column": 21
+            },
+            {
+              "title": "pa11y",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Pa11y работает только в Chrome, пропускаем для других браузеров",
+                      "location": {
+                        "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                        "line": 238,
+                        "column": 26
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:33:45.614Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Pa11y работает только в Chrome, пропускаем для других браузеров",
+                          "location": {
+                            "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                            "line": 238,
+                            "column": 26
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-3b7e40dfd2e1d3537ace",
+              "file": "benchmark.spec.ts",
+              "line": 237,
+              "column": 21
+            },
+            {
+              "title": "axe-core",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3706,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\n Бенчмарк результатов:\n"
+                        },
+                        {
+                          "text": "┌─────────┬────────────┬───────────┬──────────────────┬────────────┐\n│ (index) │ Инструмент │ Браузер   │ Приложение       │ Время (мс) │\n├─────────┼────────────┼───────────┼──────────────────┼────────────┤\n│ 0       │ \u001b[32m'axe-core'\u001b[39m │ \u001b[32m'firefox'\u001b[39m │ \u001b[32m'native-angular'\u001b[39m │ \u001b[33m3827\u001b[39m       │\n│ 1       │ \u001b[32m'axe-core'\u001b[39m │ \u001b[32m'firefox'\u001b[39m │ \u001b[32m'ssr-angular'\u001b[39m    │ \u001b[33m21284\u001b[39m      │\n│ 2       │ \u001b[32m'axe-core'\u001b[39m │ \u001b[32m'firefox'\u001b[39m │ \u001b[32m'static-html'\u001b[39m    │ \u001b[33m3603\u001b[39m       │\n└─────────┴────────────┴───────────┴──────────────────┴────────────┘\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:33:45.619Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-af241aaea2fd4f4a1f15",
+              "file": "benchmark.spec.ts",
+              "line": 214,
+              "column": 21
+            },
+            {
+              "title": "lighthouse",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Lighthouse работает только в Chrome, пропускаем для других браузеров",
+                      "location": {
+                        "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                        "line": 269,
+                        "column": 26
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:33:51.311Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Lighthouse работает только в Chrome, пропускаем для других браузеров",
+                          "location": {
+                            "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                            "line": 269,
+                            "column": 26
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-80961c42191febd22b24",
+              "file": "benchmark.spec.ts",
+              "line": 268,
+              "column": 21
+            },
+            {
+              "title": "pa11y",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Pa11y работает только в Chrome, пропускаем для других браузеров",
+                      "location": {
+                        "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                        "line": 238,
+                        "column": 26
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Запускаем сервер для static-html...\n"
+                        },
+                        {
+                          "text": "[static-html] сервер готов\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "(node:33158) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:33:50.259Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Pa11y работает только в Chrome, пропускаем для других браузеров",
+                          "location": {
+                            "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                            "line": 238,
+                            "column": 26
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-f39287cd81a9351833d2",
+              "file": "benchmark.spec.ts",
+              "line": 237,
+              "column": 21
+            },
+            {
+              "title": "axe-core",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4133,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:33:51.316Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-21687cf28d97e883f8f6",
+              "file": "benchmark.spec.ts",
+              "line": 214,
+              "column": 21
+            }
+          ]
+        },
+        {
+          "title": "native-angular",
+          "file": "benchmark.spec.ts",
+          "line": 197,
+          "column": 10,
+          "specs": [
+            {
+              "title": "pa11y",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2389,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Запускаем сервер для native-angular...\n"
+                        },
+                        {
+                          "text": "[native-angular] \n> angular-native@0.0.0 start\n> ng serve\n\n\n"
+                        },
+                        {
+                          "text": "[native-angular] \u001b[33m❯\u001b[39m Building...\n\n"
+                        },
+                        {
+                          "text": "[native-angular] \u001b[32m✔\u001b[39m Building...\n\n"
+                        },
+                        {
+                          "text": "[native-angular] \u001b[1mInitial chunk files\u001b[22m\u001b[2m | \u001b[22m\u001b[1mNames\u001b[22m        \u001b[2m | \u001b[22m\u001b[1mRaw size\u001b[22m\n\u001b[32mmain.js\u001b[39m            \u001b[2m | \u001b[22m\u001b[2mmain\u001b[22m         \u001b[2m | \u001b[22m\u001b[36m73.06 kB\u001b[39m\u001b[2m | \u001b[22m\n\u001b[32mpolyfills.js\u001b[39m       \u001b[2m | \u001b[22m\u001b[2mpolyfills\u001b[22m    \u001b[2m | \u001b[22m\u001b[36m95 bytes\u001b[39m\u001b[2m | \u001b[22m\n\u001b[32mstyles.css\u001b[39m         \u001b[2m | \u001b[22m\u001b[2mstyles\u001b[22m       \u001b[2m | \u001b[22m\u001b[36m95 bytes\u001b[39m\u001b[2m | \u001b[22m\n\n\u001b[1m \u001b[22m                  \u001b[2m | \u001b[22m\u001b[1mInitial total\u001b[22m\u001b[2m | \u001b[22m\u001b[1m73.25 kB\u001b[22m\n\nApplication bundle generation complete. [0.594 seconds] - 2026-06-22T07:31:04.341Z\n\n\n"
+                        },
+                        {
+                          "text": "[native-angular] Watch mode enabled. Watching for file changes...\n\n"
+                        },
+                        {
+                          "text": "[native-angular] NOTE: Raw file sizes do not reflect development server per-request transformations.\n\n"
+                        },
+                        {
+                          "text": "[native-angular]   \u001b[32m➜\u001b[39m  \u001b[1mLocal\u001b[22m:   \u001b[36mhttp://localhost:\u001b[1m4300\u001b[22m/\u001b[39m\n\n"
+                        },
+                        {
+                          "text": "[native-angular] сервер готов\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:31:03.101Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-170efaab0ac66e0d26eb",
+              "file": "benchmark.spec.ts",
+              "line": 237,
+              "column": 21
+            },
+            {
+              "title": "lighthouse",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8828,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [
+                        {
+                          "buffer": ""
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:31:07.535Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-9265494d8f4e1e58544f",
+              "file": "benchmark.spec.ts",
+              "line": 268,
+              "column": 21
+            },
+            {
+              "title": "axe-core",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3686,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:31:16.366Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-47f4ea769ce5950e66ec",
+              "file": "benchmark.spec.ts",
+              "line": 214,
+              "column": 21
+            },
+            {
+              "title": "pa11y",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Pa11y работает только в Chrome, пропускаем для других браузеров",
+                      "location": {
+                        "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                        "line": 238,
+                        "column": 26
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:33:00.429Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Pa11y работает только в Chrome, пропускаем для других браузеров",
+                          "location": {
+                            "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                            "line": 238,
+                            "column": 26
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-592b75437bb1f3e14ebd",
+              "file": "benchmark.spec.ts",
+              "line": 237,
+              "column": 21
+            },
+            {
+              "title": "lighthouse",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Lighthouse работает только в Chrome, пропускаем для других браузеров",
+                      "location": {
+                        "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                        "line": 269,
+                        "column": 26
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Запускаем сервер для native-angular...\n"
+                        },
+                        {
+                          "text": "[native-angular] \n> angular-native@0.0.0 start\n> ng serve\n\n\n"
+                        },
+                        {
+                          "text": "[native-angular] \u001b[33m❯\u001b[39m Building...\n\n"
+                        },
+                        {
+                          "text": "[native-angular] \u001b[32m✔\u001b[39m Building...\n\n"
+                        },
+                        {
+                          "text": "[native-angular] \u001b[1mInitial chunk files\u001b[22m\u001b[2m | \u001b[22m\u001b[1mNames\u001b[22m        \u001b[2m | \u001b[22m\u001b[1mRaw size\u001b[22m\n\u001b[32mmain.js\u001b[39m            \u001b[2m | \u001b[22m\u001b[2mmain\u001b[22m         \u001b[2m | \u001b[22m\u001b[36m73.06 kB\u001b[39m\u001b[2m | \u001b[22m\n\u001b[32mpolyfills.js\u001b[39m       \u001b[2m | \u001b[22m\u001b[2mpolyfills\u001b[22m    \u001b[2m | \u001b[22m\u001b[36m95 bytes\u001b[39m\u001b[2m | \u001b[22m\n\u001b[32mstyles.css\u001b[39m         \u001b[2m | \u001b[22m\u001b[2mstyles\u001b[22m       \u001b[2m | \u001b[22m\u001b[36m95 bytes\u001b[39m\u001b[2m | \u001b[22m\n\n\u001b[1m \u001b[22m                  \u001b[2m | \u001b[22m\u001b[1mInitial total\u001b[22m\u001b[2m | \u001b[22m\u001b[1m73.25 kB\u001b[22m\n\nApplication bundle generation complete. [0.559 seconds] - 2026-06-22T07:32:54.740Z\n\n\n"
+                        },
+                        {
+                          "text": "[native-angular] Watch mode enabled. Watching for file changes...\n\n"
+                        },
+                        {
+                          "text": "[native-angular] NOTE: Raw file sizes do not reflect development server per-request transformations.\n\n"
+                        },
+                        {
+                          "text": "[native-angular]   \u001b[32m➜\u001b[39m  \u001b[1mLocal\u001b[22m:   \u001b[36mhttp://localhost:\u001b[1m4300\u001b[22m/\u001b[39m\n\n"
+                        },
+                        {
+                          "text": "[native-angular] сервер готов\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "(node:33036) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:32:53.631Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Lighthouse работает только в Chrome, пропускаем для других браузеров",
+                          "location": {
+                            "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                            "line": 269,
+                            "column": 26
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-f23cd0e4a175716c6264",
+              "file": "benchmark.spec.ts",
+              "line": 268,
+              "column": 21
+            },
+            {
+              "title": "axe-core",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4229,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:32:55.692Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-0b8563f579bcba1cf789",
+              "file": "benchmark.spec.ts",
+              "line": 214,
+              "column": 21
+            },
+            {
+              "title": "pa11y",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Pa11y работает только в Chrome, пропускаем для других браузеров",
+                      "location": {
+                        "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                        "line": 238,
+                        "column": 26
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:34:04.895Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Pa11y работает только в Chrome, пропускаем для других браузеров",
+                          "location": {
+                            "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                            "line": 238,
+                            "column": 26
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-f513df49214f53458a83",
+              "file": "benchmark.spec.ts",
+              "line": 237,
+              "column": 21
+            },
+            {
+              "title": "lighthouse",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Lighthouse работает только в Chrome, пропускаем для других браузеров",
+                      "location": {
+                        "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                        "line": 269,
+                        "column": 26
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:34:04.898Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Lighthouse работает только в Chrome, пропускаем для других браузеров",
+                          "location": {
+                            "file": "/Users/igorallayarov/Desktop/university_works/Nir_2_sem/testing/benchmark.spec.ts",
+                            "line": 269,
+                            "column": 26
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-d186c2bca88ad370fc0f",
+              "file": "benchmark.spec.ts",
+              "line": 268,
+              "column": 21
+            },
+            {
+              "title": "axe-core",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7164,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Запускаем сервер для native-angular...\n"
+                        },
+                        {
+                          "text": "[native-angular] \n> angular-native@0.0.0 start\n> ng serve\n\n\n"
+                        },
+                        {
+                          "text": "[native-angular] \u001b[33m❯\u001b[39m Building...\n\n"
+                        },
+                        {
+                          "text": "[native-angular] \u001b[32m✔\u001b[39m Building...\n\n"
+                        },
+                        {
+                          "text": "[native-angular] \u001b[1mInitial chunk files\u001b[22m\u001b[2m | \u001b[22m\u001b[1mNames\u001b[22m        \u001b[2m | \u001b[22m\u001b[1mRaw size\u001b[22m\n\u001b[32mmain.js\u001b[39m            \u001b[2m | \u001b[22m\u001b[2mmain\u001b[22m         \u001b[2m | \u001b[22m\u001b[36m73.06 kB\u001b[39m\u001b[2m | \u001b[22m\n\u001b[32mpolyfills.js\u001b[39m       \u001b[2m | \u001b[22m\u001b[2mpolyfills\u001b[22m    \u001b[2m | \u001b[22m\u001b[36m95 bytes\u001b[39m\u001b[2m | \u001b[22m\n\u001b[32mstyles.css\u001b[39m         \u001b[2m | \u001b[22m\u001b[2mstyles\u001b[22m       \u001b[2m | \u001b[22m\u001b[36m95 bytes\u001b[39m\u001b[2m | \u001b[22m\n\n\u001b[1m \u001b[22m                  \u001b[2m | \u001b[22m\u001b[1mInitial total\u001b[22m\u001b[2m | \u001b[22m\u001b[1m73.25 kB\u001b[22m\n\nApplication bundle generation complete. [0.541 seconds] - 2026-06-22T07:33:56.746Z\n\n\n"
+                        },
+                        {
+                          "text": "[native-angular] Watch mode enabled. Watching for file changes...\n\n"
+                        },
+                        {
+                          "text": "[native-angular] NOTE: Raw file sizes do not reflect development server per-request transformations.\n\n"
+                        },
+                        {
+                          "text": "[native-angular]   \u001b[32m➜\u001b[39m  \u001b[1mLocal\u001b[22m:   \u001b[36mhttp://localhost:\u001b[1m4300\u001b[22m/\u001b[39m\n\n"
+                        },
+                        {
+                          "text": "[native-angular] сервер готов\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-22T07:33:55.687Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fd0f79bca92272c89f59-5d9109e1f59d45be3818",
+              "file": "benchmark.spec.ts",
+              "line": 214,
+              "column": 21
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-06-22T07:30:45.293Z",
+    "duration": 243936.726,
+    "expected": 15,
+    "skipped": 12,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

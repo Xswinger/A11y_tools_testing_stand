@@ -1,0 +1,26 @@
+[
+  {
+    "tool": "axe-core",
+    "browser": "webkit",
+    "app": "native-angular",
+    "durationMs": 1560,
+    "timestamp": "2026-06-21T19:40:10.803Z",
+    "runId": "1782070807515-96vpqh"
+  },
+  {
+    "tool": "axe-core",
+    "browser": "webkit",
+    "app": "static-html",
+    "durationMs": 1464,
+    "timestamp": "2026-06-21T19:40:13.505Z",
+    "runId": "1782070807515-96vpqh"
+  },
+  {
+    "tool": "axe-core",
+    "browser": "webkit",
+    "app": "ssr-angular",
+    "durationMs": 21229,
+    "timestamp": "2026-06-21T19:40:57.681Z",
+    "runId": "1782070807515-96vpqh"
+  }
+]

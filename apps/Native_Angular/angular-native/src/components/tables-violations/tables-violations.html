@@ -1,0 +1,53 @@
+<div class="violation-section">
+  <h2>7. Таблицы</h2>
+
+  <!-- empty-table-header -->
+  <table border="1">
+    <tr>
+      <th></th>
+      <th>Заголовок 2</th>
+    </tr>
+    <tr>
+      <td>Данные 1</td>
+      <td>Данные 2</td>
+    </tr>
+  </table>
+
+  <!-- scope-attr-valid -->
+  <table border="1">
+    <tr>
+      <th scope="invalid">Заголовок с неверным scope</th>
+    </tr>
+  </table>
+
+  <!-- 
+    НАРУШЕНИЕ: table-duplicate-name 
+    Элемент <caption> содержит тот же текст, что и атрибут summary 
+    -->
+  <table border="1" summary="Таблица данных">
+    <caption>
+      Таблица данных
+    </caption>
+    <tr>
+      <th>Данные</th>
+    </tr>
+  </table>
+
+  <!-- отсутствие th -->
+  <table border="1">
+    <tr>
+      <td>Ячейка без заголовка</td>
+    </tr>
+  </table>
+
+  <!-- Устаревший атрибут summary (нарушение WCAG 4.1.1) -->
+  <table border="1" summary="Старый атрибут">
+    <caption>
+      Таблица с устаревшим summary
+    </caption>
+    <tr>
+      <th>Заголовок</th>
+      <td>Данные</td>
+    </tr>
+  </table>
+</div>

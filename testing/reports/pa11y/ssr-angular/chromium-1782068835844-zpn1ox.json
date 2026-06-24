@@ -1,0 +1,306 @@
+{
+  "documentTitle": "Тестовая страница доступности (полный набор нарушений WCAG)",
+  "pageUrl": "http://localhost:4200/",
+  "issues": [
+    {
+      "code": "accesskeys",
+      "type": "error",
+      "typeCode": 1,
+      "message": "accesskey attribute value should be unique (https://dequeuniversity.com/rules/axe/4.8/accesskeys?application=axeAPI)",
+      "context": "<a _ngcontent-ng-c4106667971=\"\" href=\"https://example.com\" accesskey=\"s\" id=\"search-link-1\">Поиск (accesskey s)</a>",
+      "selector": "#search-link-1",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensures every accesskey attribute value is unique",
+        "impact": "serious",
+        "help": "accesskey attribute value should be unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/accesskeys?application=axeAPI"
+      }
+    },
+    {
+      "code": "aria-dialog-name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "ARIA dialog and alertdialog nodes should have an accessible name (https://dequeuniversity.com/rules/axe/4.8/aria-dialog-name?application=axeAPI)",
+      "context": "<div role=\"dialog\" style=\"border: 1px solid black; padding: 5px;\"> Модальное окно без aria-label </div>",
+      "selector": "html > body > app-root > app-aria-violations > div > div:nth-child(3)",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensures every ARIA dialog and alertdialog node has an accessible name",
+        "impact": "serious",
+        "help": "ARIA dialog and alertdialog nodes should have an accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/aria-dialog-name?application=axeAPI"
+      }
+    },
+    {
+      "code": "aria-required-attr",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Required ARIA attributes must be provided (https://dequeuniversity.com/rules/axe/4.8/aria-required-attr?application=axeAPI)",
+      "context": "<div role=\"checkbox\" tabindex=\"0\" aria-labelledby=\"chk-label\" class=\"custom-checkbox\"></div>",
+      "selector": "html > body > app-root > app-aria-violations > div > div:nth-child(7)",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensures elements with ARIA roles have all required ARIA attributes",
+        "impact": "critical",
+        "help": "Required ARIA attributes must be provided",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/aria-required-attr?application=axeAPI"
+      }
+    },
+    {
+      "code": "aria-required-children",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Certain ARIA roles must contain particular children (https://dequeuniversity.com/rules/axe/4.8/aria-required-children?application=axeAPI)",
+      "context": "<div role=\"row\">Это div с ролью row вне таблицы</div>",
+      "selector": "html > body > app-root > app-aria-violations > div > div:nth-child(2)",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensures elements with an ARIA role that require child roles contain them",
+        "impact": "critical",
+        "help": "Certain ARIA roles must contain particular children",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/aria-required-children?application=axeAPI"
+      }
+    },
+    {
+      "code": "aria-required-parent",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Certain ARIA roles must be contained by particular parents (https://dequeuniversity.com/rules/axe/4.8/aria-required-parent?application=axeAPI)",
+      "context": "<div role=\"row\">Это div с ролью row вне таблицы</div>",
+      "selector": "html > body > app-root > app-aria-violations > div > div:nth-child(2)",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensures elements with an ARIA role that require parent roles are contained by them",
+        "impact": "critical",
+        "help": "Certain ARIA roles must be contained by particular parents",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/aria-required-parent?application=axeAPI"
+      }
+    },
+    {
+      "code": "aria-required-parent",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Certain ARIA roles must be contained by particular parents (https://dequeuniversity.com/rules/axe/4.8/aria-required-parent?application=axeAPI)",
+      "context": "<div role=\"treeitem\">Элемент дерева без имени</div>",
+      "selector": "html > body > app-root > app-aria-violations > div > div:nth-child(5)",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensures elements with an ARIA role that require parent roles are contained by them",
+        "impact": "critical",
+        "help": "Certain ARIA roles must be contained by particular parents",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/aria-required-parent?application=axeAPI"
+      }
+    },
+    {
+      "code": "frame-title",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Frames must have an accessible name (https://dequeuniversity.com/rules/axe/4.8/frame-title?application=axeAPI)",
+      "context": "<iframe src=\"https://example.com\" width=\"300\" height=\"100\"></iframe>",
+      "selector": "html > body > app-root > app-misc-violations > div > iframe",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensures <iframe> and <frame> elements have an accessible name",
+        "impact": "serious",
+        "help": "Frames must have an accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/frame-title?application=axeAPI"
+      }
+    },
+    {
+      "code": "image-alt",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Images must have alternate text (https://dequeuniversity.com/rules/axe/4.8/image-alt?application=axeAPI)",
+      "context": "<img>",
+      "selector": "html > body > app-root > app-images-violations > div > img:nth-child(2)",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+        "impact": "critical",
+        "help": "Images must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/image-alt?application=axeAPI"
+      }
+    },
+    {
+      "code": "image-alt",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Images must have alternate text (https://dequeuniversity.com/rules/axe/4.8/image-alt?application=axeAPI)",
+      "context": "<img>",
+      "selector": "html > body > app-root > app-images-violations > div > a > img",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+        "impact": "critical",
+        "help": "Images must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/image-alt?application=axeAPI"
+      }
+    },
+    {
+      "code": "label-title-only",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Form elements should have a visible label (https://dequeuniversity.com/rules/axe/4.8/label-title-only?application=axeAPI)",
+      "context": "<input type=\"text\" title=\"Имя пользователя\" placeholder=\"Имя\" id=\"userName\">",
+      "selector": "#userName",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensures that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+        "impact": "serious",
+        "help": "Form elements should have a visible label",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/label-title-only?application=axeAPI"
+      }
+    },
+    {
+      "code": "link-name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Links must have discernible text (https://dequeuniversity.com/rules/axe/4.8/link-name?application=axeAPI)",
+      "context": "<a href=\"https://example.com\"><img></a>",
+      "selector": "html > body > app-root > app-images-violations > div > a",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensures links have discernible text",
+        "impact": "serious",
+        "help": "Links must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/link-name?application=axeAPI"
+      }
+    },
+    {
+      "code": "select-name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Select element must have an accessible name (https://dequeuniversity.com/rules/axe/4.8/select-name?application=axeAPI)",
+      "context": "<select><option>Опция 1</option><option...</select>",
+      "selector": "html > body > app-root > app-forms-violations > div > select",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensures select element has an accessible name",
+        "impact": "critical",
+        "help": "Select element must have an accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/select-name?application=axeAPI"
+      }
+    },
+    {
+      "code": "tabindex",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Elements should not have tabindex greater than zero (https://dequeuniversity.com/rules/axe/4.8/tabindex?application=axeAPI)",
+      "context": "<div tabindex=\"5\">Первый фокус (tabindex=5)</div>",
+      "selector": "html > body > app-root > app-misc-violations > div > div:nth-child(7)",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensures tabindex attribute values are not greater than 0",
+        "impact": "serious",
+        "help": "Elements should not have tabindex greater than zero",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/tabindex?application=axeAPI"
+      }
+    },
+    {
+      "code": "tabindex",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Elements should not have tabindex greater than zero (https://dequeuniversity.com/rules/axe/4.8/tabindex?application=axeAPI)",
+      "context": "<div tabindex=\"1\">Второй фокус (tabindex=1)</div>",
+      "selector": "html > body > app-root > app-misc-violations > div > div:nth-child(8)",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensures tabindex attribute values are not greater than 0",
+        "impact": "serious",
+        "help": "Elements should not have tabindex greater than zero",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/tabindex?application=axeAPI"
+      }
+    },
+    {
+      "code": "aria-hidden-focus",
+      "type": "error",
+      "typeCode": 1,
+      "message": "ARIA hidden element must not be focusable or contain focusable elements (https://dequeuniversity.com/rules/axe/4.8/aria-hidden-focus?application=axeAPI)",
+      "context": "<div aria-hidden=\"true\"><a href=\"#\">Скрытая ссылка, но ...</div>",
+      "selector": "html > body > app-root > app-aria-violations > div > div:nth-child(9)",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensures aria-hidden elements are not focusable nor contain focusable elements",
+        "impact": "serious",
+        "help": "ARIA hidden element must not be focusable or contain focusable elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/aria-hidden-focus?application=axeAPI"
+      }
+    },
+    {
+      "code": "aria-valid-attr-value",
+      "type": "error",
+      "typeCode": 1,
+      "message": "ARIA attributes must conform to valid values (https://dequeuniversity.com/rules/axe/4.8/aria-valid-attr-value?application=axeAPI)",
+      "context": "<div role=\"region\" aria-labelledby=\"nonexistent-label\">Область без названия</div>",
+      "selector": "html > body > app-root > app-aria-violations > div > div:nth-child(12)",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensures all ARIA attributes have valid values",
+        "impact": "critical",
+        "help": "ARIA attributes must conform to valid values",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/aria-valid-attr-value?application=axeAPI"
+      }
+    },
+    {
+      "code": "duplicate-id-aria",
+      "type": "error",
+      "typeCode": 1,
+      "message": "IDs used in ARIA and labels must be unique (https://dequeuniversity.com/rules/axe/4.8/duplicate-id-aria?application=axeAPI)",
+      "context": "<input type=\"text\" id=\"duplicate-field\" placeholder=\"Первый\">",
+      "selector": "#duplicate-field",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensures every id attribute value used in ARIA and in labels is unique",
+        "impact": "critical",
+        "help": "IDs used in ARIA and labels must be unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/duplicate-id-aria?application=axeAPI"
+      }
+    },
+    {
+      "code": "frame-tested",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Frames should be tested with axe-core (https://dequeuniversity.com/rules/axe/4.8/frame-tested?application=axeAPI)",
+      "context": "<iframe src=\"https://example.com\" width=\"300\" height=\"100\"></iframe>",
+      "selector": "html > body > app-root > app-misc-violations > div > iframe",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensures <iframe> and <frame> elements contain the axe-core script",
+        "impact": "critical",
+        "help": "Frames should be tested with axe-core",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/frame-tested?application=axeAPI"
+      }
+    },
+    {
+      "code": "th-has-data-cells",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Table headers in a data table must refer to data cells (https://dequeuniversity.com/rules/axe/4.8/th-has-data-cells?application=axeAPI)",
+      "context": "<table border=\"1\"><tbody><tr><th scope=\"invalid\">...</table>",
+      "selector": "html > body > app-root > app-tables-violations > div > table:nth-child(3)",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure that <th> elements and elements with role=columnheader/rowheader have data cells they describe",
+        "impact": "serious",
+        "help": "Table headers in a data table must refer to data cells",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/th-has-data-cells?application=axeAPI"
+      }
+    },
+    {
+      "code": "th-has-data-cells",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Table headers in a data table must refer to data cells (https://dequeuniversity.com/rules/axe/4.8/th-has-data-cells?application=axeAPI)",
+      "context": "<table border=\"1\" summary=\"Таблица данных\"><caption> Таблица данных </capt...</table>",
+      "selector": "html > body > app-root > app-tables-violations > div > table:nth-child(4)",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure that <th> elements and elements with role=columnheader/rowheader have data cells they describe",
+        "impact": "serious",
+        "help": "Table headers in a data table must refer to data cells",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/th-has-data-cells?application=axeAPI"
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "tool": "axe-core",
+    "browser": "chromium",
+    "app": "ssr-angular",
+    "durationMs": 21051,
+    "timestamp": "2026-06-21T20:01:07.165Z",
+    "runId": "1782072023089-v3i1kh"
+  },
+  {
+    "tool": "lighthouse",
+    "browser": "chromium",
+    "app": "ssr-angular",
+    "durationMs": 26239,
+    "timestamp": "2026-06-21T20:01:33.412Z",
+    "runId": "1782072023089-v3i1kh"
+  },
+  {
+    "tool": "pa11y",
+    "browser": "chromium",
+    "app": "ssr-angular",
+    "durationMs": 22374,
+    "timestamp": "2026-06-21T20:01:55.791Z",
+    "runId": "1782072023089-v3i1kh"
+  },
+  {
+    "tool": "lighthouse",
+    "browser": "chromium",
+    "app": "native-angular",
+    "durationMs": 6494,
+    "timestamp": "2026-06-21T20:02:04.335Z",
+    "runId": "1782072023089-v3i1kh"
+  },
+  {
+    "tool": "axe-core",
+    "browser": "chromium",
+    "app": "native-angular",
+    "durationMs": 1370,
+    "timestamp": "2026-06-21T20:02:05.749Z",
+    "runId": "1782072023089-v3i1kh"
+  },
+  {
+    "tool": "pa11y",
+    "browser": "chromium",
+    "app": "native-angular",
+    "durationMs": 1755,
+    "timestamp": "2026-06-21T20:02:07.509Z",
+    "runId": "1782072023089-v3i1kh"
+  },
+  {
+    "tool": "axe-core",
+    "browser": "chromium",
+    "app": "static-html",
+    "durationMs": 1323,
+    "timestamp": "2026-06-21T20:02:09.909Z",
+    "runId": "1782072023089-v3i1kh"
+  },
+  {
+    "tool": "lighthouse",
+    "browser": "chromium",
+    "app": "static-html",
+    "durationMs": 6427,
+    "timestamp": "2026-06-21T20:02:16.343Z",
+    "runId": "1782072023089-v3i1kh"
+  },
+  {
+    "tool": "pa11y",
+    "browser": "chromium",
+    "app": "static-html",
+    "durationMs": 1769,
+    "timestamp": "2026-06-21T20:02:18.121Z",
+    "runId": "1782072023089-v3i1kh"
+  }
+]
